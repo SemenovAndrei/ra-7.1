@@ -7,7 +7,7 @@ function DateTimePretty(Component) {
   function NewDateTime(props) {
     console.log(props)
 
-    const date = moment(props.date, 'YYYYMMDD').fromNow()
+    const date = moment(props.date, 'YYYYMMDDhhmm').fromNow()
 
     return <Component {...props} date={date} />
   }
